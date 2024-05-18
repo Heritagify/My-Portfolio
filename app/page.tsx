@@ -1,5 +1,12 @@
-import About from '../components/about'; // Assuming the About component is in the components directory
+import './globals.css'
 
-export default function AboutPage() {
-  return <About />;
+
+
+export default function Page() {
+
+  return(
+    <h1
+     className="bg-zinc-950 dark:bg-white text-blue-800 text-xl"
+    >Hello, Heritage is here for Next.js!</h1>
+  )
 }
