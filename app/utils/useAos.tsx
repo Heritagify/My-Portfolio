@@ -1,6 +1,8 @@
-// utils/useAos.js
+"use client";
+
 import { useEffect } from 'react';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const useAos = () => {
   useEffect(() => {
@@ -14,4 +16,6 @@ export const useAos = () => {
       AOS.refresh();
     };
   }, []);
+  
+  return null
 };
