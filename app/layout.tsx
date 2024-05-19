@@ -1,4 +1,5 @@
 import { ThemeProvider } from "@/components/theme-provider"
+import 'aos/dist/aos.css';
 
 
 
