@@ -1,5 +1,5 @@
 import './globals.css'
-import { useAos } from './utils/useAos';
+import { useAos } from '../components/useAos';
 
 
 export default function Page() {
