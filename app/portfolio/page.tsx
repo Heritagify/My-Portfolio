@@ -1,22 +1,33 @@
-import { useAos }  from "../utils/useAos"
-import '../globals.css'
+"use client";
+import { useAos } from "../utils/useAos";
 import Navbar from '../../components/Navbar'
-
 
 export default function Portfolio() {
   useAos();
 
-  return(
+  return (
     <div>
-        <Navbar/>
-      <h1
-      className="bg-zinc-950 dark:bg-white text-blue-800 text-xl"
-      >Hello, Heritage is here for Next.js!</h1>
-      <div data-aos="fade-up-left"
-      className='border-2 border-red-700 w-fit p-5'>
-        <h1
-        className="bg-zinc-950 dark:bg-white font-bold text-emerald-800 text-2xl">Astalavi</h1>
+      <Navbar/>
+      <h1 className="text-4xl font-bold mb-8">My Portfolio</h1>
+      <div data-aos="fade-up" className="mb-8">
+        <h2 className="text-2xl font-semibold">About</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dapibus
+          sapien ac nisi bibendum, vel malesuada nisi tincidunt.
+        </p>
+      </div>
+      <div data-aos="fade-left" className="mb-8">
+        <h2 className="text-2xl font-semibold">Projects</h2>
+        <ul>
+          <li>Project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </div>
+      <div data-aos="fade-right">
+        <h2 className="text-2xl font-semibold">Contact</h2>
+        <p>Get in touch with me at example@example.com</p>
       </div>
     </div>
-  )
+  );
 }
