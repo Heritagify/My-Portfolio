@@ -8,7 +8,7 @@ export default function Page() {
   useAos();
 
   return (
-    <div>
+    <div className="dark">
       <Navbar/>
       <h1
         data-aos="fade-right"
