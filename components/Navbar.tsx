@@ -15,7 +15,7 @@ import { LiaTimesSolid } from "react-icons/lia"; <LiaTimesSolid />
 export default function Navbar() {
   return (
     <div>
-      <header className="flex justify-between mx-44 p-4 items-center  container-fluid py-3">
+      <header className="static flex justify-between mx-44 p-4 items-center  container-fluid py-3">
         <h1 className="italic text-cyan-300 font-semibold text-2xl">
           HERITAGIFY
         </h1>

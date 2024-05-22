@@ -45,7 +45,7 @@ export default function Page() {
       <Navbar />
 
       {/* ------------HERO SECTION_--------- */}
-      <div className="mx-28 mt-28">
+      <div className="mx-48 mt-28">
         <div className="flex justify-between">
           <div className="w-2/3">
             <h1 className="text-2xl font-semibold flex items-center">
@@ -85,7 +85,7 @@ export default function Page() {
               <Image
                 src={PortPic}
                 alt="Portfolio Picture"
-                className="w-40 h-40 md:w-80 md:h-80 rounded-full"
+                className="w-40 h-40 md:w-72 md:h-72 rounded-full"
               />
             </div>
           </div>
@@ -93,11 +93,15 @@ export default function Page() {
       </div>
 
       {/* ------------ABOUT SECTION----------- */}
-      <div className="border-2 flex justify-between items-center mx-28 mt-28">
-        <Image src={AboutMe} alt="About Me" className="w-80 h-80 rounded-full" />
-        <div className="w-1/3">
-          <h1 className="text-xl font-semibold">About</h1>
-          <p className=" border-b-4">
+      <div data-aos="fade-up" className="flex justify-between items-center mx-48 mt-28">
+        <Image
+          src={AboutMe}
+          alt="About Me"
+          className="w-72 h-72 rounded-full"
+        />
+        <div className="w-3/6">
+          <h1 className="text-2xl mb-6 font-semibold">About</h1>
+          <p className="border-b-4 ml-8 py-4">
             I am driven by a passion for frontend development with a creative
             mindset and a knack for problem-solving I am intrigued with
             translating concepts into elegant, responsive websites. With a
@@ -106,9 +110,11 @@ export default function Page() {
             transform your ideas into digital realities that stand out in
             today's online landscape.
           </p>
-          <p className="flex gap-1 items-center"><FaLocationDot className=""/> Ibadan, Oyo, Nigeria.</p>
-          <p className="flex gap-1 items-center"><IoIosCall className=""/>08146041496</p>
-          <p className="flex gap-1 items-center"><IoIosMail />heritageolaiya@gmail.com</p>
+          <div className="space-y-2 ml-8 my-2">
+            <p className="flex gap-1 items-center text-sm"><FaLocationDot className="text-cyan-400"/> Ibadan, Oyo, Nigeria.</p>
+            <p className="flex gap-1 items-center text-sm"><IoIosCall className="text-cyan-500"/>08146041496</p>
+            <p className="flex gap-1 items-center text-sm"><IoIosMail className="text-cyan-600" />heritageolaiya@gmail.com</p>
+          </div>
         </div>
       </div>
     </div>
