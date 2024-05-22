@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import "./globals.css";
 import { useAos } from "./utils/useAos";
@@ -6,9 +7,9 @@ import Navbar from ".././components/Navbar";
 import { PiHandWavingFill } from "react-icons/pi";
 import { TfiShine } from "react-icons/tfi";
 import { MdDarkMode } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6"; <FaLocationDot />
-import { IoIosCall } from "react-icons/io"; <IoIosCall />
-import { IoIosMail } from "react-icons/io"; <IoIosMail />
+import { FaLocationDot } from "react-icons/fa6";
+import { IoIosCall } from "react-icons/io";
+import { IoIosMail } from "react-icons/io";
 import { VscVscode } from "react-icons/vsc";
 <VscVscode />;
 import { FaGithub } from "react-icons/fa";
@@ -34,6 +35,7 @@ import { SiMongodb } from "react-icons/si";
 import { IoLogoVercel } from "react-icons/io5";
 <IoLogoVercel />;
 import PortPic from ".././public/portPic.jpg";
+import AboutMe from ".././public/aboutMe.webp";
 
 export default function Page() {
   useAos();
@@ -47,13 +49,20 @@ export default function Page() {
         <div className="flex justify-between">
           <div className="w-2/3">
             <h1 className="text-2xl font-semibold flex items-center">
-              Hi there <PiHandWavingFill className="text-yellow-600 text-2xl" />,
+              Hi there <PiHandWavingFill className="text-yellow-600 text-2xl" />
+              ,
             </h1>
-              <h1 className="my-2 text-lg font-semibold">I am
-                <span className="text-2xl text-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 font-bold mx-1">Olaiya Heritage</span>
-                </h1>
+            <h1 className="my-2 text-lg font-semibold">
+              I'm
+              <span className="text-2xl font-bold mx-1 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 bg-clip-text text-transparent">
+                Olaiya Heritage
+              </span>
+            </h1>
             <h2 className="w-2/4 my-2 text-lg">
-              A passionate <span className="text-xl font-semibold text-teal-300">Frontend Developer</span>{" "}
+              A passionate{" "}
+              <span className="text-xl font-semibold text-teal-300">
+                Frontend Developer
+              </span>{" "}
               crafting elegant and intuitive web experiences.
             </h2>
             {/* <p className="w-2/4 text-sm my-2 ">
@@ -70,17 +79,37 @@ export default function Page() {
               </button>
             </div>
           </div>
-          <Image
-            src={PortPic}
-            alt="Portfolio Picture"
-            className="w-80 h-80 rounded-full border-4"
-          />
+          {/* ----DEVELOPER'S IMAGE */}
+          <div className="flex justify-center items-center relative p-1 bg-gradient-to-r from-indigo-500 via-teal-400 to-pink-500 rounded-full">
+            <div className=" p-1 rounded-full">
+              <Image
+                src={PortPic}
+                alt="Portfolio Picture"
+                className="w-40 h-40 md:w-80 md:h-80 rounded-full"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
       {/* ------------ABOUT SECTION----------- */}
-      <div className="border-2 ">
-
+      <div className="border-2 flex justify-between items-center mx-28 mt-28">
+        <Image src={AboutMe} alt="About Me" className="w-80 h-80 rounded-full" />
+        <div className="w-1/3">
+          <h1 className="text-xl font-semibold">About</h1>
+          <p className=" border-b-4">
+            I am driven by a passion for frontend development with a creative
+            mindset and a knack for problem-solving I am intrigued with
+            translating concepts into elegant, responsive websites. With a
+            dedication to accessibility and performance, I ensure that every
+            user interaction is seamless and engaging. Let us work together to
+            transform your ideas into digital realities that stand out in
+            today's online landscape.
+          </p>
+          <p className="flex gap-1 items-center"><FaLocationDot className=""/> Ibadan, Oyo, Nigeria.</p>
+          <p className="flex gap-1 items-center"><IoIosCall className=""/>08146041496</p>
+          <p className="flex gap-1 items-center"><IoIosMail />heritageolaiya@gmail.com</p>
+        </div>
       </div>
     </div>
   );
