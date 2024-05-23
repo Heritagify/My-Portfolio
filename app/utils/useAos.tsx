@@ -1,18 +1,18 @@
 "use client";
 import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react';
-import { AosOptions, AosInstance } from 'aos';
+import { AosOptions } from 'aos';
 import AOS from 'aos';
 
 export const useAos = () => {
-  const [AOS, setAOS] = useState<AosInstance | null>(null);
+  const [AOS, setAOS] = useState<any | null>(null);
 
 
   useEffect(() => {
     const importAOS = async () => {
       try {
         const aosModule = await import('aos');
-        setAOS(aosModule.default as AOSInstance);
+        setAOS(aosModule.default);
         aosModule.default.init({
           once: true,
           duration: 1000,
