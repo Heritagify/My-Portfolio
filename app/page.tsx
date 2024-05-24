@@ -24,8 +24,11 @@ export default function Page() {
   useAos();
 
     return (
-      <div className="backdrop-filter backdrop-blur-lg bg-">
-      <div className="dark">
+      // <div className="backdrop-filter backdrop-blur-lg bg-gray-200">
+      // <div className="dark">
+      <div className="relative min-h-screen bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500">
+      <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md"></div>
+      <div className="relative z-10">
         <Navbar />
         {/* ------------HERO SECTION_--------- */}
         <div className="mx-56 mt-28">
