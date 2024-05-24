@@ -30,14 +30,14 @@ export default function TechStack() {
               </span>
             </div>
             <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
-              <FaCss3Alt className="text-4xl text-red-400" />
+              <FaCss3Alt className="text-4xl text-blue-400" />
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 CSS
               </span>
             </div>
 
             <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
-              <IoLogoJavascript className="text-4xl text-red-400" />
+              <IoLogoJavascript className="text-4xl text-yellow-400" />
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 JAVASCRIPT
               </span>
@@ -93,7 +93,7 @@ export default function TechStack() {
               </span>
             </div>
             <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
-              <VscVscode className="text-3xl text-cyan-400" />
+              <VscVscode className="text-3xl text-cyan-400 animate-pulse" />
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 VS-CODE
               </span>

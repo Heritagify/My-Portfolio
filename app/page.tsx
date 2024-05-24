@@ -11,6 +11,12 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 import PortPic from ".././public/portPic.jpg";
+import HtmlCss from ".././public/htmlcssjs.svg";
+import Version from ".././public/version control.svg"
+import NextJs from ".././public/nextjs.svg"
+import Programming from ".././public/programing.svg"
+import Coder from ".././public/proud_coder.svg"
+import Wip from ".././public/work_in_progress.svg"
 import AboutMe from ".././public/aboutMe.webp";
 import TechStack from ".././components/TechStack";
 
@@ -117,6 +123,36 @@ export default function Page() {
           </div>
         </div>
         <TechStack />
+        <Image
+          src={HtmlCss}
+          alt="Html and Css"
+          className="w-36"
+        />
+        <Image
+          src={Programming}
+          alt="Html and Css"
+          className="w-36"
+        />
+        <Image
+          src={NextJs}
+          alt="Html and Css"
+          className="w-36 bg-cyan-100 rounded-full p-3"
+        />
+        <Image
+          src={Version}
+          alt="Html and Css"
+          className="w-36"
+        />
+        <Image
+          src={Coder}
+          alt="Html and Css"
+          className="w-36"
+        />
+        <Image
+          src={Wip}
+          alt="Html and Css"
+          className="w-36"
+        />
       </div>
   </div>
   );
