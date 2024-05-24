@@ -75,7 +75,8 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate"),
-    require('tailwindcss-filters'),
+    require('@tailwindcss/aspect-ratio'),
+    require('tailwindcss-filters')
   ],
 } satisfies Config
 
