@@ -75,6 +75,6 @@
     }
   }
 
-  @layer utilities {
-    @import 'tailwind-filters';
-  }
+  /* @layer utilities {
+    @import 'tailwindcss-filters';
+  } */
