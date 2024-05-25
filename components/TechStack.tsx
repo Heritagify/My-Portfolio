@@ -19,10 +19,10 @@ export default function TechStack() {
     return (
         <div>
             {/* --------TECH STACKS------ */}
-      <div className="py-20 space-y-5">
+      <div className="py-20 space-y-10">
         <center className="text-2xl font-semibold py-5">TECH STACKS</center>
-        <div className="space-y-4">
-          <div className="flex justify-center gap-8">
+        <div className="space-y-10">
+          <div className="flex justify-center gap-16">
             <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
               <FaHtml5 className="text-4xl text-red-400" />
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -55,39 +55,39 @@ export default function TechStack() {
               </span>
             </div>
             <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
-              <SiTailwindcss className="text-3xl text-blue-600 animate-pulse" />
+              <SiTailwindcss className="text-4xl text-blue-600 animate-pulse" />
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 TAILWIND CSS
               </span>
             </div>
             <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
-              <RiNextjsFill className="text-3xl text-black" />
+              <RiNextjsFill className="text-4xl text-black" />
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 NEXTJS
               </span>
             </div>
             <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
-              <SiTypescript className="text-3xl text-cyan-700" />
+              <SiTypescript className="text-4xl text-yellow-400" />
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 TYPESCRIPT
               </span>
             </div>
           </div>
-          <div className="flex justify-center gap-6">
+          <div className="flex justify-center gap-32">
             <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
-              <FaGithub className="text-3xl text-blue-400" />
+              <FaGithub className="text-4xl text-blue-400" />
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 GITHUB
               </span>
             </div>
             <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
-              <SiMongodb className="text-3xl text-green-500 animate-bounce" />
+              <SiMongodb className="text-4xl text-green-500 animate-bounce" />
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 MONGODB
               </span>
             </div>
             <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
-              <IoLogoVercel className="text-3xl text-green-500" />
+              <IoLogoVercel className="text-4xl text-green-500" />
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 VERCEL
               </span>
