@@ -126,36 +126,14 @@ export default function Page() {
           </div>
         </div>
         <TechStack />
-        <Image
-          src={HtmlCss}
-          alt="Html and Css"
-          className="w-36"
-        />
-        <Image
-          src={Programming}
-          alt="Html and Css"
-          className="w-36"
-        />
-        <Image
-          src={NextJs}
-          alt="Html and Css"
-          className="w-36 bg-cyan-100 rounded-full p-3"
-        />
-        <Image
-          src={Version}
-          alt="Html and Css"
-          className="w-36"
-        />
-        <Image
-          src={Coder}
-          alt="Html and Css"
-          className="w-36"
-        />
-        <Image
-          src={Wip}
-          alt="Html and Css"
-          className="w-36"
-        />
+        <div className="absolute inset-0 pointer-events-none">
+          <Image src={HtmlCss} alt="Html and Css" className="absolute w-20 top-10 left-10" />
+          <Image src={Programming} alt="Programming" className="absolute w-20 top-20 right-10" />
+          <Image src={NextJs} alt="NextJs" className="absolute w-20 bottom-10 left-20" />
+          <Image src={Version} alt="Version Control" className="absolute w-20 bottom-20 right-20" />
+          <Image src={Coder} alt="Proud Coder" className="absolute w-20 top-40 left-40" />
+          <Image src={Wip} alt="Work in Progress" className="absolute w-20 bottom-40 right-40" />
+        </div>
       </div>
   </div>
   );
