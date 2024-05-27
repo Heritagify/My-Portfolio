@@ -24,10 +24,12 @@ export default function Page() {
   useAos();
 
     return (
-      <div className="dark backdrop-filter backdrop-blur-sm bg-gray-900">
+      <div className="dark backdrop-filter backdrop-blur-xl bg-gray-900">
         <div className="absolute bg-pink-500 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-44 top-1/2" />
         <div className="absolute bg-pink-400 h-96 w-1/3 rounded-full opacity-15 blur-3xl left-1/2 top-60" />
         <div className="absolute bg-pink-600 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-7 top-36" />
+        <div className="absolute bg-pink-600 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-14 top-64" />
+        <div className="absolute bg-pink-600 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-10 top-72" />
       <div className="">
       {/* // <div className="relative min-h-screen bg-gradient-to-r from-emerald-400 from-20% via-sky-500 via-30% to-emerald-500 to-90%">
       // <div className="absolute inset-0 bg-black bg-opacity-75 backdrop-blur-sm"></div>
