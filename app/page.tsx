@@ -19,6 +19,7 @@ import Coder from ".././public/proud_coder.svg"
 import Wip from ".././public/work_in_progress.svg"
 import AboutMe from ".././public/aboutMe.webp";
 import TechStack from ".././components/TechStack";
+import Services from ".././components/Services"
 
 export default function Page() {
   useAos();
@@ -139,6 +140,7 @@ export default function Page() {
           <Image src={Coder} alt="Proud Coder" className="absolute w-20 top-40 left-40" />
           <Image src={Wip} alt="Work in Progress" className="absolute w-20 bottom-40 right-40" />
         </div>
+        <Services />
       </div>
   </div>
   );
