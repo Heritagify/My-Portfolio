@@ -12,14 +12,17 @@ import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 import PortPic from ".././public/portPic.jpg";
 import HtmlCss from ".././public/htmlcssjs.svg";
-import Version from ".././public/version control.svg"
-import NextJs from ".././public/nextjs.svg"
-import Programming from ".././public/programing.svg"
-import Coder from ".././public/proud_coder.svg"
-import Wip from ".././public/work_in_progress.svg"
+import Version from ".././public/version control.svg";
+import NextJs from ".././public/nextjs.svg";
+import Programming from ".././public/programing.svg";
+import Coder from ".././public/proud_coder.svg";
+import Wip from ".././public/work_in_progress.svg";
 import AboutMe from ".././public/aboutMe.webp";
 import TechStack from ".././components/TechStack";
-import Services from ".././components/Services"
+import Services from ".././components/Services";
+import Contact from ".././components/Contact";
+
+
 
 export default function Page() {
   useAos();
@@ -141,6 +144,7 @@ export default function Page() {
           <Image src={Wip} alt="Work in Progress" className="absolute w-20 bottom-40 right-40" />
         </div>
         <Services />
+        <Contact />
       </div>
   </div>
   );
