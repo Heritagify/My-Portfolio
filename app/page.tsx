@@ -40,9 +40,9 @@ export default function Page() {
       // <div className="relative z-10"> */}
         <Navbar />
         {/* ------------HERO SECTION_--------- */}
-        <div className="mx-56 mt-28">
+        <div className="mx-40 mt-36">
           <div className="flex justify-between">
-            <div className=" py-8 w-2/3">
+            <div className="py-20 w-2/3">
               <h1 className="text-2xl font-medium flex items-center">
                 Hi there <PiHandWavingFill className="text-yellow-600 text-3xl" />
                 ,
@@ -53,9 +53,9 @@ export default function Page() {
                   Olaiya Heritage
                 </span>
               </h1>
-              <h2 className="w-3/4 my-2 text-sm">
+              <h2 className="w-3/4 my-2 text-lg">
                 A passionate{" "}
-                <span className="text-xl font-semibold text-teal-300">
+                <span className="text-3xl font-semibold text-teal-300">
                   Frontend Developer
                 </span>{" "}
                 crafting elegant and intuitive web experiences.
@@ -66,10 +66,10 @@ export default function Page() {
                 how I can help bring your digital vision to reality.
               </p> */}
               <div className="flex gap-5 py-5">
-                <button className="cursor-pointer p-2 px-3 rounded-lg bg-white text-sm text-teal-600 font-semibold hover:text-emerald-200 shadow-md shadow-teal-600">
+                <button className="cursor-pointer p-2 px-7 rounded-lg bg-white text-sm text-teal-600 font-semibold hover:text-emerald-200 shadow-md shadow-teal-600">
                   Download CV
                 </button>
-                <button className="border border-teal-100 cursor-pointer p-2 px-7 text-sm text-teal-200 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
+                <button className="border border-teal-100 cursor-pointer p-2 px-12 text-sm text-teal-200 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
                   Hire Me
                 </button>
               </div>
