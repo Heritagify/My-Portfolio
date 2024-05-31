@@ -5,15 +5,16 @@ import "../app/globals.css";
 export default function Contact() {
   return (
     <div>
-      <center className="text-2xl font-semibold py-5">Contact</center>
-      <div className="rounded-lg flex backdrop-filter bg-white bg-opacity-25 mx-20 py-8">
-       
+      <center className="text-3xl font-semibold py-9">Contact</center>
+      <div className="rounded-lg flex backdrop-blur-lg bg-white/30 bg-opacity-25 mx-20 py-10">
+        <div className="flex justify-center items-center w-1/2">
           <Image
             src={ContactMe}
             alt="Contact me"
-            className="rounded-full w-72 h-72 object-cover"
+            className="w-96 h-96"
           />
-        <div className="flex flex-col items-center justify-center py-5 w-1/2"></div>
+        </div>
+        <div className="flex flex-col items-center justify-center py-5"></div>
         <form className="w-1/2 space-y-6 mx-5">
           <div className="space-y-2">
             <label className="">User Name</label>

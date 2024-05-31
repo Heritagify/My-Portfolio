@@ -21,6 +21,7 @@ import AboutMe from ".././public/aboutMe.webp";
 import TechStack from ".././components/TechStack";
 import Services from ".././components/Services";
 import Contact from ".././components/Contact";
+import Footer from ".././components/Footer"
 
 
 
@@ -60,11 +61,6 @@ export default function Page() {
                 </span>{" "}
                 crafting elegant and intuitive web experiences.
               </h2>
-              {/* <p className="w-2/4 text-sm my-2 ">
-                With a keen eye for design and a love for coding, I bring ideas to
-                life through clean, efficient code. Explore my portfolio to see
-                how I can help bring your digital vision to reality.
-              </p> */}
               <div className="flex gap-5 py-5">
                 <button className="cursor-pointer p-2 px-7 rounded-lg bg-white text-sm text-teal-600 font-semibold hover:text-emerald-200 shadow-md shadow-teal-600">
                   Download CV
@@ -145,6 +141,7 @@ export default function Page() {
         </div>
         <Services />
         <Contact />
+        <Footer />
       </div>
   </div>
   );
