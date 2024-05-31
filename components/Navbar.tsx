@@ -1,18 +1,24 @@
 import "../app/globals.css";
-import { FaGithub } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaGithub, FaTwitter, FaLinkedin, FaHome, FaInfoCircle, FaProjectDiagram } from "react-icons/fa";
 import { IoMdContact } from "react-icons/io";
-import { FaProjectDiagram } from "react-icons/fa";
 import { GrTechnology } from "react-icons/gr";
-import { FaHome } from "react-icons/fa";
-import { FaInfoCircle } from "react-icons/fa";
-import { IoMenu } from "react-icons/io5"; <IoMenu />
-import { LiaTimesSolid } from "react-icons/lia"; <LiaTimesSolid />
+import { IoMenu } from "react-icons/io5";
+import { LiaTimesSolid } from "react-icons/lia";
+import { useState } from 'react';
 
 
 
 export default function Navbar() {
+
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+
+
   return (
     <div>
       <header className="border-2 flex justify-between mx-36 p-8 items-center  container-fluid py-3">
@@ -20,36 +26,39 @@ export default function Navbar() {
           HERITAGIFY
         </h1>
 
-        <div className="block lg:hidden">
-    <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-      <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-    </button>
-  </div>
-
-
-
-        <div className="hidden md:flex space-x-4 text-md font-semibold">
-          <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
-            <FaHome />
-            Home
-          </li>
-          <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500">
-            <FaInfoCircle />
-            About
-          </li>
-          <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500">
-            <GrTechnology />
-            Tech Stacks
-          </li>
-          <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500">
-            <FaProjectDiagram />
-            Projects
-          </li>
-          <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-md hover:shadow-teal-500">
-            <IoMdContact />
-            Contact Me
-          </li>
+        <div className="lg:hidden">
+          <button onClick={toggleMobileMenu} className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+            {isMobileMenuOpen ? <LiaTimesSolid className="h-6 w-6" /> : <IoMenu className="h-6 w-6" />}
+          </button>
         </div>
+
+
+
+        <div className={`lg:flex space-x-4 text-md font-semibold ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+          <ul className="lg:flex lg:space-x-4 text-md font-semibold">
+            <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
+              <FaHome />
+              Home
+            </li>
+            <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500">
+              <FaInfoCircle />
+              About
+            </li>
+            <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500">
+              <GrTechnology />
+              Tech Stacks
+            </li>
+            <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500">
+              <FaProjectDiagram />
+              Projects
+            </li>
+            <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-md hover:shadow-teal-500">
+              <IoMdContact />
+              Contact Me
+            </li>
+          </ul>
+        </div>
+
         <div className="flex space-x-1">
           <button  className="cursor-pointer p-2 rounded-lg text-teal-200">
             <FaGithub />
@@ -62,6 +71,39 @@ export default function Navbar() {
           </button>
         </div>
       </header>
+
+
+       <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="lg:hidden px-6 py-2 space-y-2"
+          >
+            <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
+              <FaHome />
+              Home
+            </li>
+            <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500">
+              <FaInfoCircle />
+              About
+            </li>
+            <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500">
+              <GrTechnology />
+              Tech Stacks
+            </li>
+            <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500">
+              <FaProjectDiagram />
+              Projects
+            </li>
+            <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-md hover:shadow-teal-500">
+              <IoMdContact />
+              Contact Me
+            </li>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
-}
+};
