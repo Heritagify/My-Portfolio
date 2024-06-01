@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <header className="border-2 flex justify-between mx-4 md:mx-36 p-4 md:p-8 items-center container-fluid py-3">
+      <header className="border-2 flex justify-between mx-4 md:mx-36 p-4 md:p-4 items-center container-fluid py-3">
         <h1 className="italic text-cyan-300 font-semibold text-xl md:text-2xl">
           HERITAGIFY
         </h1>

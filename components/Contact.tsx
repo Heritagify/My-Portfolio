@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ContactMe from ".././public/contact.svg";
+import { SiMinutemailer } from "react-icons/si";
 import "../app/globals.css";
 
 export default function Contact() {
@@ -43,8 +44,11 @@ export default function Contact() {
             className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Your message..."
           ></textarea>
+
+          <button className="flex justify-center items-center p-2 px-6 rounded-lg font-bold cursor-pointer text-purple-400 bg-white hover:shadow-sm hover:shadow-white focus:outline-none focus:shadow-outline"
+            >Send Message<SiMinutemailer /></button>
           <input
-            className="p-2 px-6 rounded-lg font-bold cursor-pointer text-purple-400 bg-white hover:shadow-sm hover:shadow-white focus:outline-none focus:shadow-outline"
+            
             type="submit"
           />
         </form>
