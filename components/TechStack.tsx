@@ -67,12 +67,7 @@ export default function TechStack() {
                 NEXTJS
               </span>
             </div>
-            <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
-              <SiFramer className="text-4xl text-black" />
-              <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                FRAMER-MOTION
-              </span>
-            </div>
+            
             <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
               <SiTypescript className="text-4xl text-yellow-400" />
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -81,6 +76,12 @@ export default function TechStack() {
             </div>
           </div>
           <div className="flex justify-center gap-32">
+          <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
+              <SiFramer className="text-4xl text-black" />
+              <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                FRAMER-MOTION
+              </span>
+            </div>
             <div className="group relative flex items-center justify-center backdrop-blur-lg bg-white/30 rounded-full w-fit p-4">
               <FaGithub className="text-4xl text-blue-400" />
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white text-sm rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
