@@ -20,7 +20,7 @@ export default function Contact() {
           <div className="space-y-2">
             <label className="">User Name</label>
             <input
-              className="bg-white rounded-xl w-full p-2 py-3 shadow appearance-none border text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="bg-white rounded-xl w-full p-2 py-3 shadow appearance-none text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Enter your name"
               type="text"
             />
@@ -28,29 +28,29 @@ export default function Contact() {
           <div className="space-y-2">
             <label className="">Email</label>
             <input
-              className="bg-white rounded-xl w-full p-2 py-3 shadow appearance-none border text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="bg-white rounded-xl w-full p-2 py-3 shadow appearance-none text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Enter Your Email"
               type="text"
             />
           </div>
           <label
             // for="message"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+            className="block text-sm font-medium text-gray-900 dark:text-gray-400"
           >
             Your message
           </label>
           <textarea
             rows="4"
             className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Your message..."
+            placeholder="Enter your Message please....."
           ></textarea>
 
-          <button className="flex justify-center items-center p-2 px-6 rounded-lg font-bold cursor-pointer text-purple-400 bg-white hover:shadow-sm hover:shadow-white focus:outline-none focus:shadow-outline"
-            >Send Message<SiMinutemailer /></button>
-          <input
-            
-            type="submit"
-          />
+          <div className="flex justify-center">
+            <button className="flex justify-center items-center gap-1 p-2 px-6 rounded-lg font-semibold cursor-pointer dark:text-indigo-600 bg-indigo-700 text-gray-300 dark:bg-gray-300 hover:shadow-md hover:shadow-white focus:outline-none focus:shadow-outline"
+              >Send Message <SiMinutemailer className="text-2xl"/>
+            </button>
+          </div>
+          
         </form>
       </div>
     </div>

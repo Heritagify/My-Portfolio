@@ -74,3 +74,42 @@
       @apply bg-background text-foreground;
     }
   }
+
+  /* .hero{
+    border: 2px solid blue;
+    width: 10rem;
+    height: 11rem;
+  } */
+
+  .hexagon {
+    position: relative;
+    width: 56px; /* Adjust size as needed */
+    height: 32.37px; /* Height is half of width times sqrt(3) */
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* For the backdrop blur effect */
+    margin: 16.18px 0; /* Margin is height/2 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hexagon::before,
+  .hexagon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 28px solid transparent; /* Half of width */
+    border-right: 28px solid transparent; /* Half of width */
+  }
+  
+  .hexagon::before {
+    bottom: 100%;
+    border-bottom: 16.18px solid rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  }
+  
+  .hexagon::after {
+    top: 100%;
+    border-top: 16.18px solid rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  }
+  
+  
