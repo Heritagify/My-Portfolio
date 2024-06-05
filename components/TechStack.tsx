@@ -26,7 +26,7 @@ export default function TechStack() {
           <center className="text-2xl font-semibold">Tech Stacks</center>
         </div>
         <div className="flex mx-20 justify-between items-center">
-          <div className="space-y-14">
+          <div className="space-y-10">
           <center className="text-sm font-semibold">I have been actively learning and working with these web technologies:</center>
             <div className="flex justify-center gap-6">
               <div  data-aos="flip-left"
@@ -80,7 +80,7 @@ export default function TechStack() {
                 </span>
               </div>
             </div>
-            <div className="flex justify-center gap-6">
+            <div className="flex justify-center gap-6 ml-20 border-4">
             <div className="group relative flex items-center justify-center hover:shadow-md hover:shadow-white animate-pulse hexagon">
                 <SiFramer className="text-2xl text-black" />
                 <span className="absolute -top-14 left-1/2 -translate-x-1/2  w-28 py-2 text-center bg-gradient-to-r from-red-400 to-red-500 text-white text-xs rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
