@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import "./globals.css";
+import Link from 'next/link';
 import { useAos } from "./utils/useAos";
 import Image from "next/image";
 import Navbar from ".././components/Navbar";
@@ -62,9 +63,9 @@ export default function Page() {
                 crafting elegant and intuitive web experiences.
               </h2>
               <div className="flex gap-5 py-5">
-                <button className="cursor-pointer p-2 px-7 rounded-lg bg-white text-sm text-teal-600 font-semibold hover:text-emerald-200 shadow-md shadow-teal-600">
-                  Download CV
-                </button>
+                <Link href="../public/Heritage CV.pdf" className="cursor-pointer p-2 px-7 rounded-lg bg-white text-sm text-teal-600 font-semibold hover:text-emerald-200 shadow-md shadow-teal-600">
+                  <a href="">Download CV</a>
+                </Link>
                 <button className="border border-teal-100 cursor-pointer p-2 px-12 text-sm text-teal-200 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
                   Hire Me
                 </button>
