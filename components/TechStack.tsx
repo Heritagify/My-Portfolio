@@ -124,7 +124,8 @@ export default function TechStack() {
             <Image
               src={Check}
               alt="Skills checklist"
-              className="w "
+              className="w"
+              priority
             />
           </div>
         </div>

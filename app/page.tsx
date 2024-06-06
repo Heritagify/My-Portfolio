@@ -22,7 +22,7 @@ import AboutMe from ".././public/aboutMe.webp";
 import TechStack from ".././components/TechStack";
 import Services from ".././components/Services";
 import Contact from ".././components/Contact";
-import Footer from ".././components/Footer"
+import Footer from ".././components/Footer";
 
 
 
@@ -63,8 +63,8 @@ export default function Page() {
                 crafting elegant and intuitive web experiences.
               </h2>
               <div className="flex gap-5 py-5">
-                <Link href="../public/Heritage CV.pdf" className="cursor-pointer p-2 px-7 rounded-lg bg-white text-sm text-teal-600 font-semibold hover:text-emerald-200 shadow-md shadow-teal-600">
-                  <a href="">Download CV</a>
+                <Link href="https://drive.google.com/uc?export=download&id=12P6OjhSUYvURIGXXgbzDtSgSTbIiAnIN" className="p-2 px-7 rounded-lg bg-white text-sm text-teal-600 font-semibold hover:text-emerald-200 shadow-md shadow-teal-600 cursor-pointer">
+                  Download CV
                 </Link>
                 <button className="border border-teal-100 cursor-pointer p-2 px-12 text-sm text-teal-200 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
                   Hire Me
