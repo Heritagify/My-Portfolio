@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <div>
+    <div className="sticky top-0 left-0 right-0 z-50 backdrop-blur-xl shadow-md shadow-slate-700">
       <header className="flex justify-between mx-4 md:mx-36 p-4 md:p-4 items-center container-fluid py-3">
         <h1 className="italic text-cyan-300 font-semibold text-xl md:text-2xl">
           HERITAGIFY
@@ -53,13 +53,13 @@ export default function Navbar() {
 
         <div className="flex space-x-1">
           <button className="cursor-pointer p-2 rounded-lg text-teal-200">
-            <FaGithub />
+            <FaGithub  className="text-2xl"/>
           </button>
           <button className="cursor-pointer p-2 rounded-lg text-teal-200">
-            <FaTwitter />
+            <FaTwitter className="text-2xl"/>
           </button>
           <button className="cursor-pointer p-2 rounded-lg text-teal-200">
-            <FaLinkedin />
+            <FaLinkedin className="text-2xl" />
           </button>
         </div>
       </header>
