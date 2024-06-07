@@ -42,7 +42,7 @@ export default function Page() {
       // <div className="relative z-10"> */}
         <Navbar />
         {/* ------------HERO SECTION_--------- */}
-        <div className="mx-40 mt-36">
+        <div className="mx-40 mt-28">
           <div className="flex justify-between">
             <div className="py-20 w-2/3">
               <h1 className="text-2xl font-medium flex items-center">
@@ -72,15 +72,13 @@ export default function Page() {
               </div>
             </div>
             {/* ----DEVELOPER'S IMAGE */}
-            <div className="flex justify-center items-center p-1 relative bg-gradient-to-r from-indigo-500 via-teal-400 to-pink-500 rounded-full">
-              <div className=" p-1 rounded-full">
-                <Image
-                  src={PortPic}
-                  alt="Portfolio Picture"
-                  className="w-40 h-40 md:w-80 md:h-80 rounded-full"
-                />
-              </div>
-            </div>
+            {/* <div className="flex justify-center items-center p-2 relative  bg-gradient-to-r from-indigo-500 via-teal-400 to-pink-500 rounded-full"> */}
+              <Image
+                src={PortPic}
+                alt="Portfolio Picture"
+                className="w-40 h-40 md:w-96 md:h-96 rounded-full"
+              />
+            {/* </div> */}
           </div>
         </div>
         {/* ------------ABOUT SECTION----------- */}
