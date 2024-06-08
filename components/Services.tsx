@@ -56,7 +56,7 @@ const projects = [
 export default function Services() {
     return(
         <div>
-            <center className="text-2xl font-semibold py-8">Tech Stacks</center>
+            <center className="text-2xl font-semibold py-8">Projects</center>
             
                 <div className="border-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4 lg:mx-36">
                 {projects.map((project) => (

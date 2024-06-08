@@ -5,12 +5,20 @@ import Link from "next/link";
 import { useAos } from "./utils/useAos";
 import Image from "next/image";
 import Navbar from ".././components/Navbar";
+import Services from ".././components/Services";
+import TechStack from ".././components/TechStack";
+import Contact from ".././components/Contact";
+import Footer from ".././components/Footer";
+
 import { PiHandWavingFill } from "react-icons/pi";
 import { TfiShine } from "react-icons/tfi";
 import { MdDarkMode } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
+import { FaCode } from "react-icons/fa";
+import { BsBoxes } from "react-icons/bs";
+
 import PortPic from ".././public/portPic.jpg";
 import HtmlCss from ".././public/htmlcssjs.svg";
 import Version from ".././public/version-control.svg";
@@ -19,11 +27,8 @@ import Programming from ".././public/programing.svg";
 import Coder from ".././public/proud_coder.svg";
 import Wip from ".././public/work_in_progress.svg";
 import AboutMe from ".././public/aboutMe.webp";
-import TechStack from ".././components/TechStack";
-import Services from ".././components/Services";
-import Contact from ".././components/Contact";
-import Footer from ".././components/Footer";
 import Zigzag from ".././public/zigzag.png"
+import { AosOptions } from 'aos';
 
 export default function Page() {
   useAos();
@@ -41,7 +46,7 @@ export default function Page() {
       // <div className="relative z-10"> */}
         <Navbar />
         {/* ------------HERO SECTION_--------- */}
-        <div className="relative border-2 flex justify-center md:hidden pt-16 pb-8">
+        <div data-aos="fade-down" className="relative flex justify-center md:hidden pt-16 pb-10">
           <Image
             src={PortPic}
             alt="Portfolio Picture"
@@ -50,42 +55,46 @@ export default function Page() {
           <Image
             src={Zigzag}
             alt="zigzag"
-            className="absolute h-20 left-4 top-8"
+            className="absolute h-16 left-4 top-8"
           />
           <Image
             src={Zigzag}
             alt="zigzag"
-            className="absolute h-20 right-4 bottom-3"
+            className="absolute h-16 right-4 bottom-3"
           />
+          <FaCode className="absolute top-5 right-16 text-3xl text-white"/>
+          <BsBoxes className="absolute bottom-0 left-5 text-4xl text-red-400"/>
+
         </div>
-        <div className="border-4 mx-5 lg:mx-40 mt-28">
+
+        <div className="mx-4 lg:mx-40 md:mt-28">
           <div className="flex justify-between">
-            <div className="py-20 md:w-2/3 border-4">
+            <div className="py-10 md:py-20 w-full md:w-2/3 space-y-5 md:space-y-0">
               <h1 className="text-5xl md:text-2xl font-medium flex items-center">
                 Hi there{" "}
                 <PiHandWavingFill className="text-yellow-600 md:text-3xl" />,
               </h1>
               <h1 className="my-2 text-2xl font-semibold ">
                 I'm
-                <span className="text-4xl font-bold mx-1 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 bg-clip-text text-transparent">
+                <span className="text-4xl lg:text-2xl font-bold mx-1 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 bg-clip-text text-transparent">
                   Olaiya Heritage
                 </span>
               </h1>
-              <h2 className="w-3/4 my-2 text-lg">
+              <h2 className="md:w-3/4 my-2 md:text-lg">
                 A passionate{" "}
-                <span className="text-3xl font-semibold text-teal-300">
+                <span className="block text-4xl md:text-3xl font-semibold text-teal-300">
                   Frontend Developer
                 </span>{" "}
                 crafting elegant and intuitive web experiences.
               </h2>
-              <div className="flex gap-5 py-5">
+              <div className="flex gap-7 md:gap-5 md:py-5">
                 <Link
                   href="https://drive.google.com/uc?export=download&id=12P6OjhSUYvURIGXXgbzDtSgSTbIiAnIN"
-                  className="p-2 px-7 rounded-lg bg-white text-sm text-teal-600 font-semibold hover:text-emerald-200 shadow-md shadow-teal-600 cursor-pointer"
+                  className="p-4 md:p-2 px-8 md:px-7 rounded-lg bg-white text-lg md:text-sm text-teal-600 font-bold md:font-semibold hover:bg-emerald-200 shadow-md shadow-teal-600 cursor-pointer"
                 >
                   Download CV
                 </Link>
-                <button className="border border-teal-100 cursor-pointer p-2 px-12 text-sm text-teal-200 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
+                <button className="border border-teal-100 cursor-pointer p-4 md:p-2 px-12 text-lg md:text-sm text-teal-200 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
                   Hire Me
                 </button>
               </div>
@@ -150,16 +159,16 @@ export default function Page() {
           </div>
         </div>
         <TechStack />
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="hidden lg:block absolute inset-0 pointer-events-none">
           <Image
             src={HtmlCss}
             alt="Html and Css"
-            className="absolute w-20 top-10 left-10"
+            className="absolute w-20 top-2/4 lg:top-12 left-10"
           />
           <Image
             src={Programming}
             alt="Programming"
-            className="absolute w-20 top-20 right-10"
+            className="absolute w-20 top-20 right-10 "
           />
           <Image
             src={NextJs}
