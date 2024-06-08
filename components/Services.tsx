@@ -58,7 +58,7 @@ export default function Services() {
         <div>
             <center className="text-2xl font-semibold py-8">Tech Stacks</center>
             
-                <div className="border-4 flex justify-center gap-8">
+                <div className="border-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4 lg:mx-36">
                 {projects.map((project) => (
                   <ProjectCard key={project.id} project={project} />
                 ))}
