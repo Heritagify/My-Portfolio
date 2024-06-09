@@ -34,7 +34,7 @@ export default function Page() {
   useAos();
 
   return (
-    <div className="dark backdrop-filter backdrop-blur-xl bg-gray-900">
+    <div className="w-full dark backdrop-filter backdrop-blur-xl bg-gray-900">
       <div className="absolute bg-pink-500 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-44 top-1/2" />
       <div className="absolute bg-pink-400 h-96 w-1/3 rounded-full opacity-15 blur-3xl left-1/2 top-60" />
       <div className="absolute bg-pink-600 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-7 top-36" />
@@ -112,15 +112,17 @@ export default function Page() {
         {/* ------------ABOUT SECTION----------- */}
         <div
           data-aos="fade-up"
-          className="flex justify-between items-center mx-48 mt-28"
+          className="lg:flex justify-between items-center mx-48 mt-28"
         >
+        <center className="md:hidden text-2xl mb-6 font-semibold">About</center>
+
           <Image
             src={AboutMe}
             alt="About Me"
             className="w-72 h-72 rounded-full"
           />
           <div className="w-3/6">
-            <h1 className="text-2xl mb-6 font-semibold">About</h1>
+            <h1 className="hidden lg:block text-3xl mb-6 font-semibold">About</h1>
             {/* <p className="border-b-4 ml-8 py-4">
               I am driven by a passion for frontend development with a creative
               mindset and a knack for problem-solving. I am intrigued with
