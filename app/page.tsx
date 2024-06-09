@@ -18,6 +18,8 @@ import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 import { FaCode } from "react-icons/fa";
 import { BsBoxes } from "react-icons/bs";
+import { ImDownload } from "react-icons/im";
+
 
 import PortPic from ".././public/portPic.jpg";
 import HtmlCss from ".././public/htmlcssjs.svg";
@@ -90,9 +92,9 @@ export default function Page() {
               <div className="flex gap-7 md:gap-5 md:py-5">
                 <Link
                   href="https://drive.google.com/uc?export=download&id=12P6OjhSUYvURIGXXgbzDtSgSTbIiAnIN"
-                  className="p-4 md:p-2 px-8 md:px-7 rounded-lg bg-white text-lg md:text-sm text-teal-600 font-bold md:font-semibold hover:bg-emerald-200 shadow-md shadow-teal-600 cursor-pointer"
+                  className=" flex gap-1 p-4 md:p-2 px-8 md:px-7 rounded-lg bg-white text-lg md:text-sm text-teal-600 font-bold md:font-semibold hover:bg-emerald-200 shadow-md shadow-teal-600 cursor-pointer"
                 >
-                  Download CV
+                  <ImDownload />Download CV
                 </Link>
                 <button className="border border-teal-100 cursor-pointer p-4 md:p-2 px-12 text-lg md:text-sm text-teal-200 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
                   Hire Me
