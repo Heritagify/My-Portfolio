@@ -20,7 +20,7 @@ import { FaCode } from "react-icons/fa";
 import { BsBoxes } from "react-icons/bs";
 import { ImDownload } from "react-icons/im";
 
-
+import Logo from '.././public/heritagifyLogo1.png'
 import PortPic from ".././public/portPic.jpg";
 import HtmlCss from ".././public/htmlcssjs.svg";
 import Version from ".././public/version-control.svg";
@@ -36,7 +36,7 @@ export default function Page() {
   useAos();
 
   return (
-    <div className="w-full dark backdrop-filter backdrop-blur-xl bg-gray-900">
+    <div className="dark backdrop-filter backdrop-blur-xl bg-gray-900">
       <div className="absolute bg-pink-500 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-44 top-1/2" />
       <div className="absolute bg-pink-400 h-96 w-1/3 rounded-full opacity-15 blur-3xl left-1/2 top-60" />
       <div className="absolute bg-pink-600 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-7 top-36" />
@@ -82,21 +82,21 @@ export default function Page() {
                   Olaiya Heritage
                 </span>
               </h1>
-              <h2 className="md:w-3/4 my-2 md:text-lg">
+              <h2 className="md:w-3/4 my-2 text-xl md:text-lg">
                 A passionate{" "}
                 <span className="block text-4xl md:text-3xl font-semibold text-teal-300">
                   Frontend Developer
                 </span>{" "}
                 crafting elegant and intuitive web experiences.
               </h2>
-              <div className="flex gap-7 md:gap-5 md:py-5">
+              <div className="flex gap-7 md:gap-5 py-2 md:py-5">
                 <Link
                   href="https://drive.google.com/uc?export=download&id=12P6OjhSUYvURIGXXgbzDtSgSTbIiAnIN"
-                  className=" flex gap-1 p-4 md:p-2 px-8 md:px-7 rounded-lg bg-white text-lg md:text-sm text-teal-600 font-bold md:font-semibold hover:bg-emerald-200 shadow-md shadow-teal-600 cursor-pointer"
+                  className=" flex gap-1 items-center p-4 px-4 md:px-7 rounded-lg bg-white text-lg md:text-sm text-teal-600 font-bold md:font-semibold hover:bg-emerald-200 shadow-md shadow-teal-600 cursor-pointer"
                 >
-                  <ImDownload />Download CV
+                  <ImDownload className="text-2xl"/>Download CV
                 </Link>
-                <button className="border border-teal-100 cursor-pointer p-4 md:p-2 px-12 text-lg md:text-sm text-teal-200 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
+                <button className="border border-teal-100 cursor-pointer p-2 px-12 text-lg md:text-sm text-teal-200 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
                   Hire Me
                 </button>
               </div>
@@ -113,18 +113,20 @@ export default function Page() {
         </div>
         {/* ------------ABOUT SECTION----------- */}
         <div
-          data-aos="fade-up"
-          className="lg:flex justify-between items-center mx-48 mt-28"
+          // data-aos="fade-up"
+          className="lg:flex justify-between items-center md:mx-48 mt-10 md:mt-20 border-4"
         >
-        <center className="md:hidden text-2xl mb-6 font-semibold">About</center>
+        <center className="md:hidden text-3xl mb-8 font-semibold">About</center>
 
-          <Image
-            src={AboutMe}
-            alt="About Me"
-            className="w-72 h-72 rounded-full"
-          />
+          <div>
+            <Image
+              src={AboutMe}
+              alt="About Me"
+              className="w-72 h-72 rounded-full"
+            />
+          </div>
           <div className="w-3/6">
-            <h1 className="hidden lg:block text-3xl mb-6 font-semibold">About</h1>
+            <h1 className="hidden lg:block text-xl mb-6 font-semibold">About</h1>
             {/* <p className="border-b-4 ml-8 py-4">
               I am driven by a passion for frontend development with a creative
               mindset and a knack for problem-solving. I am intrigued with

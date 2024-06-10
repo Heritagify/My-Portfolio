@@ -9,7 +9,10 @@ import ProjectCard from './ProjectCard';
 import Login from ".././public/Login&Register.jpg";
 import Todo from ".././public/todolist.jpg";
 import Calculator from ".././public/discountCalc.jpg";
-import Swifty from ".././public/swiftyblog.jpg"
+import Swifty from ".././public/swiftyblog.jpg";
+import wordGuess from ".././public/wordGuess.jpg"
+import Travels from ".././public/travels.jpg";
+import BooksLab from ".././public/bookslab.jpg"
 
 
 
@@ -35,6 +38,15 @@ const projects = [
     },
     {
       id: 3,
+      title: 'Traveling Website',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      image: Travels,
+      technologies: ['html', 'Tailwindcss', 'ReactJs', 'jsx', 'animations'],
+      githubLink: 'https://github.com/Heritagify/Todo-List-with-Redux',
+      liveLink: 'https://todo-list-with-redux-omega.vercel.app/',
+    },
+    {
+      id: 4,
       title: 'ToDo List with Redux',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
       image: Todo,
@@ -43,7 +55,25 @@ const projects = [
       liveLink: 'https://todo-list-with-redux-omega.vercel.app/',
     },
     {
-      id: 3,
+      id: 5,
+      title: 'E-Library',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      image: BooksLab,
+      technologies: ['html', 'css', 'ReactJs', 'TailwindCss'],
+      githubLink: 'https://github.com/Heritagify/Todo-List-with-Redux',
+      liveLink: 'https://todo-list-with-redux-omega.vercel.app/',
+    },
+    {
+      id: 6,
+      title: 'Word-guessing Game',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      image: wordGuess,
+      technologies: ['html', 'css', 'js', 'animations'],
+      githubLink: 'https://github.com/Heritagify/Todo-List-with-Redux',
+      liveLink: 'https://todo-list-with-redux-omega.vercel.app/',
+    },
+    {
+      id: 7,
       title: 'Discount Calculator',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
       image: Calculator,

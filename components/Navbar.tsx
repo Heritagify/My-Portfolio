@@ -1,10 +1,14 @@
 import "../app/globals.css";
+import React, { useState } from 'react';
+import Image from "next/image";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaTwitter, FaLinkedin, FaHome, FaInfoCircle, FaProjectDiagram } from "react-icons/fa";
 import { IoMdContact } from "react-icons/io";
 import { GrTechnology } from "react-icons/gr";
 import { IoMenu, IoClose } from "react-icons/io5";
-import React, { useState } from 'react';
+import Logo from '.././public/heritagifyLogo1.png'
+
 
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,11 +18,16 @@ export default function Navbar() {
   };
 
   return (
-    <div className="sticky top-0 left-0 right-0 z-50 backdrop-blur-xl shadow-2xl shadow-slate-700">
+    <div className="sticky top-0 left-0 right-0 z-50 backdrop-blur-xl shadow-md shadow-slate-800">
       <header className="flex justify-between mx-4 md:mx-36 p-4 md:p-4 items-center container-fluid py-3">
-        <h1 className="italic text-cyan-300 font-semibold text-xl md:text-2xl">
+        {/* <h1 >
           HERITAGIFY
-        </h1>
+        </h1> */}
+        <Image
+          src={Logo}
+          alt="logo"
+          className="italic text-cyan-300 font-semibold w-28 md:w-36"
+        />
 
         <div className="md:hidden">
           <button onClick={toggleMobileMenu} className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">

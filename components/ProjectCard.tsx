@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         {project.technologies.map((tech: string) => (
           <span
             key={tech}
-            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-3 mb-2"
+            className="inline-block bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-3 mb-2 cursor-pointer dark:hover:bg-white dark:hover:text-gray-700 hover:bg-gray-700 hover:text-white"
           >
             {tech}
           </span>
