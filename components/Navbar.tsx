@@ -1,5 +1,5 @@
 import "../app/globals.css";
-import React, { useState } from 'react';
+import React, { useState, useRef, RefObject } from 'react';
 import Image from "next/image";
 
 import { motion, AnimatePresence } from "framer-motion";
@@ -11,6 +11,16 @@ import Logo from '.././public/heritagifyLogo1.png'
 
 
 export default function Navbar() {
+    const homeRef: RefObject<HTMLDivElement> = useRef(null);
+    const aboutRef: RefObject<HTMLDivElement> = useRef(null);
+    const techStackRef: RefObject<HTMLDivElement> = useRef(null);
+    const projectsRef: RefObject<HTMLDivElement> = useRef(null);
+    const contactRef: RefObject<HTMLDivElement> = useRef(null);
+  
+    const handleScrollToSection = (sectionRef: RefObject<HTMLDivElement>) => {
+      sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -41,19 +51,29 @@ export default function Navbar() {
               <FaHome />
               Home
             </li>
+
             <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500">
               <FaInfoCircle />
               About
             </li>
+
             <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500">
               <GrTechnology />
               Tech Stacks
             </li>
-            <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500">
+
+            <li 
+              className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500"
+              onClick={() => handleScrollToSection(projectsRef)}
+            >
               <FaProjectDiagram />
               Projects
             </li>
-            <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-md hover:shadow-teal-500">
+            
+            <li
+              className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-md hover:shadow-teal-500"
+              onClick={() => handleScrollToSection(contactRef)}
+            >
               <IoMdContact />
               Contact Me
             </li>
@@ -98,7 +118,10 @@ export default function Navbar() {
                 <FaProjectDiagram />
                 Projects
               </li>
-              <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-md hover:shadow-teal-500">
+              <li
+                className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-md hover:shadow-teal-500"
+                onClick={() => handleScrollToSection(contactRef)}
+               >
                 <IoMdContact />
                 Contact Me
               </li>

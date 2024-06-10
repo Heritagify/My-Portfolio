@@ -1,3 +1,5 @@
+import { forwardRef } from 'react';
+
 import Image from "next/image";
 import { VscVscode } from "react-icons/vsc";
 import { FaGithub } from "react-icons/fa";
@@ -15,6 +17,10 @@ import { IoLogoVercel } from "react-icons/io5";
 import { SiFramer } from "react-icons/si";
 
 import Check from ".././public/skillsCheck.png"
+
+interface TechStackProps {
+  id: string;
+}
 
 
 export default function TechStack() {

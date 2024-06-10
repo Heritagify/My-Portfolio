@@ -1,11 +1,26 @@
+import { forwardRef } from 'react';
 import Image from "next/image";
+
 import ContactMe from ".././public/contact.svg";
 import { SiMinutemailer } from "react-icons/si";
 import "../app/globals.css";
 
-export default function Contact() {
+
+
+
+
+interface ContactProps {
+  id: string;
+}
+
+
+const Contact = forwardRef<HTMLDivElement, ContactProps>(({ id }, ref) => {
+
+  // const contactRef = useRef(null);
+
+
   return (
-    <div>
+    <div ref={ref} id={id}>
       <center className="text-3xl font-semibold py-9">Contact</center>
       <div className="rounded-lg flex backdrop-blur-lg bg-white/30 bg-opacity-25 mx-20 py-10">
         <div className="flex justify-center items-center w-1/2">
@@ -55,4 +70,5 @@ export default function Contact() {
       </div>
     </div>
   );
-}
+});
+export default Contact;

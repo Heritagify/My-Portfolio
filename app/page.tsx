@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import "./globals.css";
+import { useRef, RefObject } from 'react';
 import Link from "next/link";
+import "./globals.css";
 import { useAos } from "./utils/useAos";
 import Image from "next/image";
 import Navbar from ".././components/Navbar";
@@ -20,7 +21,7 @@ import { FaCode } from "react-icons/fa";
 import { BsBoxes } from "react-icons/bs";
 import { ImDownload } from "react-icons/im";
 
-import Logo from '.././public/heritagifyLogo1.png'
+import Logo from ".././public/heritagifyLogo1.png";
 import PortPic from ".././public/portPic.jpg";
 import HtmlCss from ".././public/htmlcssjs.svg";
 import Version from ".././public/version-control.svg";
@@ -29,10 +30,16 @@ import Programming from ".././public/programing.svg";
 import Coder from ".././public/proud_coder.svg";
 import Wip from ".././public/work_in_progress.svg";
 import AboutMe from ".././public/aboutMe.webp";
-import Zigzag from ".././public/zigzag.png"
-import { AosOptions } from 'aos';
+import Zigzag from ".././public/zigzag.png";
+import { AosOptions } from "aos";
 
 export default function Page() {
+  const homeRef: RefObject<HTMLDivElement> = useRef(null);
+  const aboutRef: RefObject<HTMLDivElement> = useRef(null);
+  const techStackRef: RefObject<HTMLDivElement> = useRef(null);
+  const projectsRef: RefObject<HTMLDivElement> = useRef(null);
+  const contactRef = useRef(null);
+
   useAos();
 
   return (
@@ -48,7 +55,10 @@ export default function Page() {
       // <div className="relative z-10"> */}
         <Navbar />
         {/* ------------HERO SECTION_--------- */}
-        <div data-aos="fade-down" className="relative flex justify-center md:hidden pt-16 pb-10">
+        <div ref={homeRef} id="home"
+          data-aos="fade-down"
+          className="relative flex justify-center md:hidden pt-16 pb-10"
+        >
           <Image
             src={PortPic}
             alt="Portfolio Picture"
@@ -64,9 +74,8 @@ export default function Page() {
             alt="zigzag"
             className="absolute h-16 right-4 bottom-3"
           />
-          <FaCode className="absolute top-5 right-16 text-3xl text-white"/>
-          <BsBoxes className="absolute bottom-0 left-5 text-4xl text-red-400"/>
-
+          <FaCode className="absolute top-5 right-16 text-3xl text-white" />
+          <BsBoxes className="absolute bottom-0 left-5 text-4xl text-red-400" />
         </div>
 
         <div className="mx-4 lg:mx-40 md:mt-28">
@@ -92,11 +101,12 @@ export default function Page() {
               <div className="flex gap-7 md:gap-5 py-2 md:py-5">
                 <Link
                   href="https://drive.google.com/uc?export=download&id=12P6OjhSUYvURIGXXgbzDtSgSTbIiAnIN"
-                  className=" flex gap-1 items-center p-4 px-4 md:px-7 rounded-lg bg-white text-lg md:text-sm text-teal-600 font-bold md:font-semibold hover:bg-emerald-200 shadow-md shadow-teal-600 cursor-pointer"
+                  className=" flex gap-1 items-center p-4 md:p-2 px-4 md:px-7 rounded-lg bg-white text-lg md:text-sm text-teal-600 font-bold md:font-semibold hover:bg-emerald-200 shadow-md shadow-teal-600"
                 >
-                  <ImDownload className="text-2xl"/>Download CV
+                  <ImDownload className="text-2xl" />
+                  Download CV
                 </Link>
-                <button className="border border-teal-100 cursor-pointer p-2 px-12 text-lg md:text-sm text-teal-200 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
+                <button className="border border-teal-100 px-12 text-lg md:text-sm text-teal-200 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
                   Hire Me
                 </button>
               </div>
@@ -112,11 +122,13 @@ export default function Page() {
           </div>
         </div>
         {/* ------------ABOUT SECTION----------- */}
-        <div
+        <div ref={aboutRef} id="about"
           // data-aos="fade-up"
-          className="lg:flex justify-between items-center md:mx-48 mt-10 md:mt-20 border-4"
+          className="lg:flex justify-between items-center md:mx-48 mt-10 md:mt-20"
         >
-        <center className="md:hidden text-3xl mb-8 font-semibold">About</center>
+          <center className="md:hidden text-3xl mb-8 font-semibold">
+            About
+          </center>
 
           <div>
             <Image
@@ -126,7 +138,9 @@ export default function Page() {
             />
           </div>
           <div className="w-3/6">
-            <h1 className="hidden lg:block text-xl mb-6 font-semibold">About</h1>
+            <h1 className="hidden lg:block text-xl mb-6 font-semibold">
+              About
+            </h1>
             {/* <p className="border-b-4 ml-8 py-4">
               I am driven by a passion for frontend development with a creative
               mindset and a knack for problem-solving. I am intrigued with
@@ -164,7 +178,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <TechStack />
+        <TechStack ref={techStackRef} id="tech-stack"/>
         <div className="hidden lg:block absolute inset-0 pointer-events-none">
           <Image
             src={HtmlCss}
@@ -197,8 +211,8 @@ export default function Page() {
             className="absolute w-20 bottom-40 right-40"
           />
         </div>
-        <Services />
-        <Contact />
+        <Services ref={projectsRef} id="projects" />
+        <Contact ref={contactRef} id="contact"/>
         <Footer />
       </div>
     </div>

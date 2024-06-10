@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import Image from "next/image";
+import { forwardRef } from 'react';
+
 import "../app/globals.css";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
