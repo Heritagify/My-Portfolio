@@ -14,22 +14,22 @@ export default function Footer() {
           <p className="text-sm">My social media handles:</p>
 
           <div className="flex space-x-9 text-2xl text-emerald-400">
-            <Link href="https://twitter.com/olaiya_Heritage">
+            <Link href="https://twitter.com/olaiya_Heritage" target="_blank">
               <FaTwitter className="cursor-pointer hover:text-red-300 hover:animate-bounce" />
             </Link>
-            <Link href=" https://wa.me/+2348146041496">
+            <Link href=" https://wa.me/+2348146041496" target="_blank">
               <IoLogoWhatsapp className="cursor-pointer hover:text-red-300 hover:animate-bounce" />
             </Link>
-            <Link href="">
+            <Link href="mailto:heritageolaiya@gmail.com" target="_blank">
               <IoMdMail className="cursor-pointer hover:text-red-300 hover:animate-bounce" />
             </Link>
-            <Link href="https://www.linkedin.com/in/olaiya-heritage">
-              <FaLinkedin className="cursor-pointer hover:text-red-300 hover:animate-bounce" />
+            <Link href="https://www.linkedin.com/in/olaiya-heritage" target="_blank" className="cursor-pointer hover:text-red-300 hover:animate-bounce" >
+              <FaLinkedin/>
             </Link>
           </div>
         </div>
 
-        <Link href="https://github.com/Heritagify" className="border-4">
+        <Link href="https://github.com/Heritagify" target="_blank" className="border-4">
           <FaGithub />
         </Link>
       </div>
