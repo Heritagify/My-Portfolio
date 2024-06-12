@@ -8,28 +8,49 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function Footer() {
   return (
-    <div className="text-teal-200 mt-10 rounded-lg backdrop-blur-lg bg-white/30 bg-opacity-25 mx-20 py-10">
+    <div className="text-teal-200 mt-10 rounded-lg backdrop-blur-lg bg-white/30 bg-opacity-25 mx-20 pb-1">
       <div className="flex justify-between mx-20">
         <div className="space-y-3">
           <p className="text-sm">My social media handles:</p>
 
           <div className="flex space-x-9 text-2xl text-emerald-400">
-            <Link href="https://twitter.com/olaiya_Heritage" target="_blank">
+            <Link
+              href="https://twitter.com/olaiya_Heritage"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter className="cursor-pointer hover:text-red-300 hover:animate-bounce" />
             </Link>
-            <Link href=" https://wa.me/+2348146041496" target="_blank">
+            <Link
+              href=" https://wa.me/+2348146041496"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IoLogoWhatsapp className="cursor-pointer hover:text-red-300 hover:animate-bounce" />
             </Link>
-            <Link href="mailto:heritageolaiya@gmail.com" target="_blank">
+            <Link
+              href="mailto:heritageolaiya@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IoMdMail className="cursor-pointer hover:text-red-300 hover:animate-bounce" />
             </Link>
-            <Link href="https://www.linkedin.com/in/olaiya-heritage" target="_blank" className="cursor-pointer hover:text-red-300 hover:animate-bounce" >
-              <FaLinkedin/>
+            <Link
+              href="https://www.linkedin.com/in/olaiya-heritage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer hover:text-red-300 hover:animate-bounce"
+            >
+              <FaLinkedin />
             </Link>
           </div>
         </div>
 
-        <Link href="https://github.com/Heritagify" target="_blank" className="border-4">
+        <Link
+          href="https://github.com/Heritagify"
+          target="_blank"
+          className="border-4"
+        >
           <FaGithub />
         </Link>
       </div>

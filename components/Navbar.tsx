@@ -1,25 +1,32 @@
 import "../app/globals.css";
-import React, { useState, useRef, RefObject } from 'react';
+import React, { useState, useRef, RefObject } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaTwitter, FaLinkedin, FaHome, FaInfoCircle, FaProjectDiagram } from "react-icons/fa";
+import {
+  FaGithub,
+  FaTwitter,
+  FaLinkedin,
+  FaHome,
+  FaInfoCircle,
+  FaProjectDiagram,
+} from "react-icons/fa";
 import { IoMdContact } from "react-icons/io";
 import { GrTechnology } from "react-icons/gr";
 import { IoMenu, IoClose } from "react-icons/io5";
-import Logo from '.././public/heritagifyLogo1.png'
-
+import Logo from ".././public/heritagifyLogo1.png";
 
 export default function Navbar() {
-    const homeRef: RefObject<HTMLDivElement> = useRef(null);
-    const aboutRef: RefObject<HTMLDivElement> = useRef(null);
-    const techStackRef: RefObject<HTMLDivElement> = useRef(null);
-    const projectsRef: RefObject<HTMLDivElement> = useRef(null);
-    const contactRef: RefObject<HTMLDivElement> = useRef(null);
-  
-    const handleScrollToSection = (sectionRef: RefObject<HTMLDivElement>) => {
-      sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
-    };
+  const homeRef: RefObject<HTMLDivElement> = useRef(null);
+  const aboutRef: RefObject<HTMLDivElement> = useRef(null);
+  const techStackRef: RefObject<HTMLDivElement> = useRef(null);
+  const projectsRef: RefObject<HTMLDivElement> = useRef(null);
+  const contactRef: RefObject<HTMLDivElement> = useRef(null);
+
+  const handleScrollToSection = (sectionRef: RefObject<HTMLDivElement>) => {
+    sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -40,12 +47,23 @@ export default function Navbar() {
         />
 
         <div className="md:hidden">
-          <button onClick={toggleMobileMenu} className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-            {isMobileMenuOpen ? <IoClose className="h-6 w-6" /> : <IoMenu className="h-6 w-6" />}
+          <button
+            onClick={toggleMobileMenu}
+            className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+          >
+            {isMobileMenuOpen ? (
+              <IoClose className="h-6 w-6" />
+            ) : (
+              <IoMenu className="h-6 w-6" />
+            )}
           </button>
         </div>
 
-        <nav className={`md:flex space-x-4 text-sm md:text-md font-semibold ${isMobileMenuOpen ? 'block' : 'hidden md:block'}`}>
+        <nav
+          className={`md:flex space-x-4 text-sm md:text-md font-semibold ${
+            isMobileMenuOpen ? "block" : "hidden md:block"
+          }`}
+        >
           <ul className="md:flex md:space-x-4">
             <li className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 shadow-md shadow-teal-600">
               <FaHome />
@@ -62,14 +80,14 @@ export default function Navbar() {
               Tech Stacks
             </li>
 
-            <li 
+            <li
               className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-sm hover:shadow-teal-500"
               onClick={() => handleScrollToSection(projectsRef)}
             >
               <FaProjectDiagram />
               Projects
             </li>
-            
+
             <li
               className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-md hover:shadow-teal-500"
               onClick={() => handleScrollToSection(contactRef)}
@@ -81,15 +99,30 @@ export default function Navbar() {
         </nav>
 
         <div className="flex space-x-1">
-          <button className="cursor-pointer p-2 rounded-lg text-teal-200">
-            <FaGithub  className="text-2xl"/>
-          </button>
-          <button className="cursor-pointer p-2 rounded-lg text-teal-200">
-            <FaTwitter className="text-2xl"/>
-          </button>
-          <button className="cursor-pointer p-2 rounded-lg text-teal-200">
+          <Link
+            href="https://github.com/Heritagify"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer p-2 rounded-lg text-teal-200"
+          >
+            <FaGithub className="text-2xl" />
+          </Link>
+          <Link
+            href="https://twitter.com/olaiya_Heritage"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer p-2 rounded-lg text-teal-200"
+          >
+            <FaTwitter className="text-2xl" />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/olaiya-heritage"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer p-2 rounded-lg text-teal-200"
+          >
             <FaLinkedin className="text-2xl" />
-          </button>
+          </Link>
         </div>
       </header>
 
@@ -121,7 +154,7 @@ export default function Navbar() {
               <li
                 className="flex items-center gap-1 cursor-pointer p-2 rounded-lg hover:text-emerald-200 hover:shadow-md hover:shadow-teal-500"
                 onClick={() => handleScrollToSection(contactRef)}
-               >
+              >
                 <IoMdContact />
                 Contact Me
               </li>
@@ -131,4 +164,4 @@ export default function Navbar() {
       </AnimatePresence>
     </div>
   );
-};
+}
