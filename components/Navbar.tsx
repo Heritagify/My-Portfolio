@@ -43,7 +43,7 @@ export default function Navbar() {
         <Image
           src={Logo}
           alt="logo"
-          className="italic text-cyan-300 font-semibold w-28 md:w-36"
+          className="w-28 md:w-36"
         />
 
         <div className="md:hidden">

@@ -18,7 +18,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="w-full rounded-3xl pb-4 overflow-hidden shadow-sm shadow-slate-500">
+    <div className="w-full rounded-3xl pb-4 overflow-hidden shadow-md shadow-slate-500">
       <Image className="w-full  h-48" src={project.image} alt={project.title} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{project.title}</div>

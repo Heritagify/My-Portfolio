@@ -31,6 +31,7 @@ import Coder from ".././public/proud_coder.svg";
 import Wip from ".././public/work_in_progress.svg";
 import AboutMe from ".././public/aboutMe.webp";
 import Zigzag from ".././public/zigzag.png";
+import Pattern from ".././public/pattern.svg"
 import { AosOptions } from "aos";
 
 export default function Page() {
@@ -43,16 +44,35 @@ export default function Page() {
   useAos();
 
   return (
-    <div className="dark backdrop-filter backdrop-blur-xl bg-gray-900">
-      <div className="absolute bg-pink-500 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-44 top-1/2" />
+    <div className="dark backdrop-filter backdrop-blur-xl bg-gray-900 overflow-hidden">
+      {/* <div className="absolute bg-pink-500 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-44 top-1/2" />
       <div className="absolute bg-pink-400 h-96 w-1/3 rounded-full opacity-15 blur-3xl left-1/2 top-60" />
       <div className="absolute bg-pink-600 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-7 top-36" />
       <div className="absolute bg-pink-600 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-14 top-64" />
-      <div className="absolute bg-pink-600 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-10 top-72" />
+      <div className="absolute bg-pink-600 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-10 top-72" /> */}
       <div className="">
         {/* // <div className="relative min-h-screen bg-gradient-to-r from-emerald-400 from-20% via-sky-500 via-30% to-emerald-500 to-90%">
       // <div className="absolute inset-0 bg-black bg-opacity-75 backdrop-blur-sm"></div>
       // <div className="relative z-10"> */}
+       <div className='flex justify-center w-full h-full'>
+         <Image
+            src={Pattern}
+            alt='Bg-Pattern'
+            className='absolute -z-10'
+          />
+
+          <Image
+            src={Pattern}
+            alt='Bg-Pattern'
+            className='absolute top-1/2 -left-10 -z-10'
+          />
+           <Image
+              src={Pattern}
+              alt='Bg-Pattern'
+              className='absolute top-2/3 -z-10'
+            />
+       </div>
+      
         <Navbar />
         {/* ------------HERO SECTION_--------- */}
         <div ref={homeRef} id="home"
@@ -124,7 +144,7 @@ export default function Page() {
         {/* ------------ABOUT SECTION----------- */}
         <div ref={aboutRef} id="about"
           // data-aos="fade-up"
-          className="lg:flex justify-between items-center md:mx-48 mt-10 md:mt-20"
+          className="lg:flex justify-between items-center md:mx-36 my-20 md:mt-20"
         >
           <center className="md:hidden text-3xl mb-8 font-semibold">
             About
@@ -134,10 +154,10 @@ export default function Page() {
             <Image
               src={AboutMe}
               alt="About Me"
-              className="w-72 h-72 rounded-full"
+              className="w-96 h-96 rounded-full"
             />
           </div>
-          <div className="w-3/6">
+          <div className="w-3/6 pl-8">
             <h1 className="hidden lg:block text-xl mb-6 font-semibold">
               About
             </h1>
@@ -211,8 +231,12 @@ export default function Page() {
             className="absolute w-20 bottom-40 right-40"
           />
         </div>
+        
+      
+
         <Services ref={projectsRef} id="projects" />
         <Contact ref={contactRef} id="contact"/>
+        
         <Footer />
       </div>
     </div>
