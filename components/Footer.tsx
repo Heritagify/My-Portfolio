@@ -11,11 +11,10 @@ export default function Footer() {
   return (
     <div
       data-aos="fade-up"
-      data-aos-anchor-placement="bottom-center"
       className="text-teal-200 mt-28 rounded-lg backdrop-blur-lg bg-white/30 bg-opacity-25 mx-20 pt-10 pb-1"
     >
       <div className="flex justify-between mx-20">
-        <Image src={Logo} alt="logo" className="w-28 md:w-28" />
+        <Image src={Logo} alt="logo" className="w-28 md:w-28 p-2 shadow-sm shadow-teal-500" />
         <div className="space-y-3">
           <p className="text-sm">My social media handles:</p>
 
