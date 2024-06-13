@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from ".././public/heritagifyLogo1.png"
+import Logo from ".././public/heritagifyLogo1.png";
 
 import "../app/globals.css";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
@@ -9,13 +9,13 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function Footer() {
   return (
-    <div className="text-teal-200 mt-28 rounded-lg backdrop-blur-lg bg-white/30 bg-opacity-25 mx-20 pt-10 pb-1">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-center"
+      className="text-teal-200 mt-28 rounded-lg backdrop-blur-lg bg-white/30 bg-opacity-25 mx-20 pt-10 pb-1"
+    >
       <div className="flex justify-between mx-20">
-      <Image
-          src={Logo}
-          alt="logo"
-          className="w-28 md:w-28"
-        />
+        <Image src={Logo} alt="logo" className="w-28 md:w-28" />
         <div className="space-y-3">
           <p className="text-sm">My social media handles:</p>
 
@@ -46,8 +46,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="cursor-pointer hover:text-white hover:animate-bounce hover:rounded-full hover:p-1 hover:ring-4 hover:ring-cyan-600"
-              />
+              <FaLinkedin className="cursor-pointer hover:text-white hover:animate-bounce hover:rounded-full hover:p-1 hover:ring-4 hover:ring-cyan-600" />
             </Link>
           </div>
         </div>

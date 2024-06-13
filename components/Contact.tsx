@@ -1,8 +1,8 @@
-import React, { forwardRef } from 'react';
-import Image from 'next/image';
-import { SiMinutemailer } from 'react-icons/si';
-import ContactMe from '.././public/contact.svg';
-import '../app/globals.css';
+import React, { forwardRef } from "react";
+import Image from "next/image";
+import { SiMinutemailer } from "react-icons/si";
+import ContactMe from ".././public/contact.svg";
+import "../app/globals.css";
 
 interface ContactProps {
   id: string;
@@ -10,7 +10,7 @@ interface ContactProps {
 
 const Contact = forwardRef<HTMLDivElement, ContactProps>(({ id }, ref) => {
   return (
-    <div ref={ref} id={id}>
+    <div data-aos="zoom-in-down" ref={ref} id={id}>
       <center className="text-3xl font-semibold py-9">Contact</center>
       <div className="rounded-lg flex backdrop-blur-lg bg-white/30 bg-opacity-25 mx-20 py-10">
         <div className="flex justify-center items-center w-1/2">
@@ -54,6 +54,6 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>(({ id }, ref) => {
   );
 });
 
-Contact.displayName = 'Contact';
+Contact.displayName = "Contact";
 
 export default Contact;

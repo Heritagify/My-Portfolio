@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import { useRef, RefObject } from 'react';
+import { useRef, RefObject } from "react";
 import Link from "next/link";
 import "./globals.css";
 import { useAos } from "./utils/useAos";
@@ -31,7 +31,7 @@ import Coder from ".././public/proud_coder.svg";
 import Wip from ".././public/work_in_progress.svg";
 import AboutMe from ".././public/aboutMe.webp";
 import Zigzag from ".././public/zigzag.png";
-import Pattern from ".././public/pattern.svg"
+import Pattern from ".././public/pattern.svg";
 import { AosOptions } from "aos";
 
 export default function Page() {
@@ -54,28 +54,30 @@ export default function Page() {
         {/* // <div className="relative min-h-screen bg-gradient-to-r from-emerald-400 from-20% via-sky-500 via-30% to-emerald-500 to-90%">
       // <div className="absolute inset-0 bg-black bg-opacity-75 backdrop-blur-sm"></div>
       // <div className="relative z-10"> */}
-       <div className='flex justify-center w-full h-full'>
-         <Image
+        <div className="flex justify-center w-full h-full">
+          <Image
             src={Pattern}
-            alt='Bg-Pattern'
-            className='absolute -z-10'
+            alt="Bg-Pattern"
+            className="absolute -z-10 top-12 opacity-50"
           />
 
           <Image
             src={Pattern}
-            alt='Bg-Pattern'
-            className='absolute top-1/2 -left-10 -z-10'
+            alt="Bg-Pattern"
+            className="absolute top-1/2 -left-10 -z-10 opacity-50"
           />
-           <Image
-              src={Pattern}
-              alt='Bg-Pattern'
-              className='absolute top-2/3 -z-10'
-            />
-       </div>
-      
+          <Image
+            src={Pattern}
+            alt="Bg-Pattern"
+            className="absolute W-72 top-3/4 -z-10"
+          />
+        </div>
+
         <Navbar />
         {/* ------------HERO SECTION_--------- */}
-        <div ref={homeRef} id="home"
+        <div
+          ref={homeRef}
+          id="home"
           data-aos="fade-down"
           className="relative flex justify-center md:hidden pt-16 pb-10"
         >
@@ -142,9 +144,13 @@ export default function Page() {
           </div>
         </div>
         {/* ------------ABOUT SECTION----------- */}
-        <div ref={aboutRef} id="about"
-          // data-aos="fade-up"
-          className="lg:flex justify-between items-center md:mx-36 my-20 md:mt-20"
+        <div
+          ref={aboutRef}
+          id="about"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="lg:flex justify-between items-center md:mx-32 my-20 md:mt-28"
         >
           <center className="md:hidden text-3xl mb-8 font-semibold">
             About
@@ -198,7 +204,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <TechStack ref={techStackRef} id="tech-stack"/>
+        <TechStack ref={techStackRef} id="tech-stack" />
         <div className="hidden lg:block absolute inset-0 pointer-events-none">
           <Image
             src={HtmlCss}
@@ -231,12 +237,10 @@ export default function Page() {
             className="absolute w-20 bottom-40 right-40"
           />
         </div>
-        
-      
 
         <Services ref={projectsRef} id="projects" />
-        <Contact ref={contactRef} id="contact"/>
-        
+        <Contact ref={contactRef} id="contact" />
+
         <Footer />
       </div>
     </div>

@@ -40,11 +40,7 @@ export default function Navbar() {
         {/* <h1 >
           HERITAGIFY
         </h1> */}
-        <Image
-          src={Logo}
-          alt="logo"
-          className="w-28 md:w-36"
-        />
+        <Image src={Logo} alt="logo" className="w-28 md:w-36" />
 
         <div className="md:hidden">
           <button

@@ -1,7 +1,7 @@
-import Link from 'next/link';
+import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
-import { FaGithub } from 'react-icons/fa';
-import { FiExternalLink } from 'react-icons/fi';
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
 interface Project {
   title: string;
@@ -18,11 +18,16 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="w-full rounded-3xl pb-4 overflow-hidden shadow-md shadow-slate-500">
+    <div
+      data-aos="flip-left"
+      className="w-full rounded-3xl pb-4 overflow-hidden shadow-md shadow-slate-500"
+    >
       <Image className="w-full  h-48" src={project.image} alt={project.title} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{project.title}</div>
-        <p className="dark:text-cyan-100 text-gray-700 text-md">{project.description}</p>
+        <p className="dark:text-cyan-100 text-gray-700 text-md">
+          {project.description}
+        </p>
       </div>
       <div className="px-6 gap-2 pb-2">
         {project.technologies.map((tech: string) => (
@@ -35,7 +40,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         ))}
       </div>
       <div className="flex justify-center gap-5 text-xl">
-        <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
+        <Link
+          href={project.githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub className="text-teal-300 animate-bounce" />
         </Link>
         <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
