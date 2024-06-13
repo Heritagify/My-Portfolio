@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <Image className="w-full  h-48" src={project.image} alt={project.title} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{project.title}</div>
-        <p className="text-gray-700 text-sm">{project.description}</p>
+        <p className="dark:text-cyan-100 text-gray-700 text-md">{project.description}</p>
       </div>
       <div className="px-6 gap-2 pb-2">
         {project.technologies.map((tech: string) => (

@@ -23,7 +23,7 @@ const projects = [
     {
       id: 1,
       title: 'Login & SignUp',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      description: 'An intuitive and secure authentication system featuring responsive design and engaging animations for a seamless user experience.',
       image: Login,
       technologies: ['html', 'css', 'js', 'animations'],
       githubLink: 'https://github.com/your-github-username',
@@ -32,7 +32,7 @@ const projects = [
     {
       id: 2,
       title: 'Blog App',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      description: 'A dynamic and user-friendly blogging platform with rich text editor and interactive UI elements.',
       image: Swifty,
       technologies: ['html', 'css', 'js', 'animations'],
       githubLink: 'https://github.com/your-github-username',
@@ -41,7 +41,7 @@ const projects = [
     {
       id: 3,
       title: 'Traveling Website',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      description: 'A visually captivating travel website built with React and Tailwind CSS, featuring responsive design and transitions with lot of ticket and booking pages.',
       image: Travels,
       technologies: ['html', 'Tailwindcss', 'ReactJs', 'jsx', 'animations'],
       githubLink: 'https://github.com/Heritagify/Todo-List-with-Redux',
@@ -50,7 +50,7 @@ const projects = [
     {
       id: 4,
       title: 'ToDo List with Redux',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      description: 'A modern and interactive todo list application built with Redux for efficient state management. Easily add, edit, and delete tasks, and keep track of your daily goals. The intuitive interface and seamless animations make task management a breeze.',
       image: Todo,
       technologies: ['html', 'css', 'js', 'animations'],
       githubLink: 'https://github.com/Heritagify/Todo-List-with-Redux',
@@ -59,7 +59,7 @@ const projects = [
     {
       id: 5,
       title: 'E-Library',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      description: 'i collaborated on an e-library application built with ReactJs and styled with TailwindCSS and Vanilla css, to offer a seamless reading experience. ',
       image: BooksLab,
       technologies: ['html', 'css', 'ReactJs', 'TailwindCss'],
       githubLink: 'https://github.com/Heritagify/Todo-List-with-Redux',
@@ -68,7 +68,7 @@ const projects = [
     {
       id: 6,
       title: 'Word-guessing Game',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      description: 'I made a test your guessing skill with this engaging word-guessing game. Guess the hidden word by entering letters one at a time. With each correct guess, the word reveals itself. The sleek design and smooth animations add to the excitement of the gameplay.',
       image: wordGuess,
       technologies: ['html', 'css', 'js', 'animations'],
       githubLink: 'https://github.com/Heritagify/Todo-List-with-Redux',
@@ -77,7 +77,7 @@ const projects = [
     {
       id: 7,
       title: 'Discount Calculator',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      description: 'Calculate discounts effortlessly with this intuitive discount calculator. Enter the original price and the discount percentage, and instantly see the discounted price and the amount saved. The clean and responsive design ensures a user-friendly experience on any device.',
       image: Calculator,
       technologies: ['html', 'css', 'js', 'animations'],
       githubLink: 'https://github.com/Heritagify/Todo-List-with-Redux',
@@ -90,7 +90,7 @@ export default function Services() {
         <div>
             <center className="text-2xl font-semibold py-8">Projects</center>
             
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4 lg:mx-36">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4 pb-1 lg:mx-36">
                 {projects.map((project) => (
                   <ProjectCard key={project.id} project={project} />
                 ))}

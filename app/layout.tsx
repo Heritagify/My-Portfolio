@@ -13,7 +13,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href={Logo.src} type="image/png" />
+        <title>Heritagify&#x2019;s</title>
+        <link rel="icon" href={Logo.src} type="image/png" sizes="64x64"/>
       </head>
       <body>
         <ThemeProvider
