@@ -163,8 +163,8 @@ export default function Page() {
               className="w-96 h-96 rounded-full"
             />
           </div>
-          <div className="w-3/6 pl-8">
-            <h1 className="hidden lg:block text-xl mb-6 font-semibold">
+          <div className="w-3/6 mt-6 pl-12">
+            <h1 className="hidden lg:block text-xl mb-5 lg:ml-3 font-semibold">
               About
             </h1>
             {/* <p className="border-b-4 ml-8 py-4">
@@ -176,7 +176,7 @@ export default function Page() {
               transform your ideas into digital realities that stand out in
               today's online landscape.
             </p> */}
-            <p className="border-b-4 ml-8 py-4">
+            <p className="border-b-4 ml-8">
               As a passionate frontend developer, I thrive on blending
               creativity with technical prowess to craft captivating digital
               experiences. With a keen eye for design and a knack for
