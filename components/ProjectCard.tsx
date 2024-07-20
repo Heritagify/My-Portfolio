@@ -1,5 +1,6 @@
 import Link from "next/link";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
+import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
@@ -22,7 +23,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       data-aos="flip-left"
       className="w-full rounded-3xl pb-4 overflow-hidden shadow-md shadow-slate-500"
     >
-      <Image className="w-full  h-48" src={project.image} alt={project.title} />
+      <Image
+       className="w-full  h-48"
+       src={project.image}
+       alt={project.title}
+      />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{project.title}</div>
         <p className="dark:text-cyan-100 text-gray-700 text-md">

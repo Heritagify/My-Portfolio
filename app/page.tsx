@@ -50,10 +50,7 @@ export default function Page() {
       <div className="absolute bg-pink-600 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-7 top-36" />
       <div className="absolute bg-pink-600 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-14 top-64" />
       <div className="absolute bg-pink-600 h-96 w-1/3 rounded-full opacity-20 blur-3xl left-10 top-72" /> */}
-      <div className="">
-        {/* // <div className="relative min-h-screen bg-gradient-to-r from-emerald-400 from-20% via-sky-500 via-30% to-emerald-500 to-90%">
-      // <div className="absolute inset-0 bg-black bg-opacity-75 backdrop-blur-sm"></div>
-      // <div className="relative z-10"> */}
+      <div className="relative">
         <div className="flex justify-center w-full h-full">
           <Image
             src={Pattern}
@@ -204,7 +201,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <TechStack ref={techStackRef} id="tech-stack" />
+        <TechStack />
         <div className="hidden lg:block absolute inset-0 pointer-events-none">
           <Image
             src={HtmlCss}
@@ -238,8 +235,8 @@ export default function Page() {
           />
         </div>
 
-        <Services ref={projectsRef} id="projects" />
-        <Contact ref={contactRef} id="contact" />
+        <Services />
+        <Contact />
 
         <Footer />
       </div>

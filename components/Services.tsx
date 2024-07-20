@@ -8,13 +8,13 @@ import { FiExternalLink } from "react-icons/fi";
 import ProjectCard from './ProjectCard';
 
 
-import Login from ".././public/Login&Register.jpg";
-import Todo from ".././public/todolist.jpg";
-import Calculator from ".././public/discountCalc.jpg";
-import Swifty from ".././public/swiftyblog.jpg";
-import wordGuess from ".././public/wordGuess.jpg"
-import Travels from ".././public/travels.jpg";
-import BooksLab from ".././public/bookslab.jpg"
+import Login from "../public/Login&Register.jpg";
+import Todo from "../public/todolist.jpg";
+import Calculator from "../public/discountCalc.jpg";
+import Swifty from "../public/swiftyblog.jpg";
+import wordGuess from "../public/wordGuess.jpg"
+import Travels from "../public/travels.jpg";
+import BooksLab from "../public/bookslab.jpg"
 
 
 

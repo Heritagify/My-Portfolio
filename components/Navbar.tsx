@@ -35,11 +35,8 @@ export default function Navbar() {
   };
 
   return (
-    <div className="sticky top-0 left-0 right-0 z-50 backdrop-blur-xl shadow-md shadow-slate-800">
+    <div className="fixed top-0 left-0 right-0 backdrop-blur-xl shadow-md shadow-slate-800">
       <header className="flex justify-between mx-4 md:mx-36 p-4 md:p-4 items-center container-fluid py-3">
-        {/* <h1 >
-          HERITAGIFY
-        </h1> */}
         <Image src={Logo} alt="logo" className="w-28 md:w-36" />
 
         <div className="md:hidden">
