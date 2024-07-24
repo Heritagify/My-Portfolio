@@ -7,7 +7,7 @@ import { FiExternalLink } from "react-icons/fi";
 interface Project {
   title: string;
   description: string;
-  image: StaticImageData;
+  image: string;
   technologies: string[];
   githubLink: string;
   liveLink: string;
@@ -27,6 +27,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
        className="w-full  h-48"
        src={project.image}
        alt={project.title}
+       width={500}  // Add a width prop
+      height={300}
       />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{project.title}</div>
